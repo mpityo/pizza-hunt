@@ -2,17 +2,17 @@ const { Schema, model } = require('mongoose');
 
 const PizzaSchema = new Schema({
     pizzaName: {
-        type: string
+        type: String
     },
     createdBy: {
-        type: string
+        type: String
     },
     createdAt: {
         type: Date,
         default: Date.now
     },
     size: {
-        type: string,
+        type: String,
         default: "Large"
     },
     toppings: []
