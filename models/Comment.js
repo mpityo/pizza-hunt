@@ -58,7 +58,7 @@ const CommentSchema = new Schema(
 );
 
 // get total count of replies
-PizzaSchema.virtual('replyCount').get(function() {
+CommentSchema.virtual('replyCount').get(function() {
     return this.replies.length;
 });
 
